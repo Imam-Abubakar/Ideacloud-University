@@ -1,0 +1,128 @@
+<!--
+Author: GROUP 15 @ Imam Abubakar
+EXAM PROJECT For GSE Internet and Web Design 2020/2021
+Submitted to Mrs. Ogunlade O.R.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.PNG" type="image/png">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- *************HEADER************  -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- *************SUBHEADER************  -->
+        <h1>Contact Us</h1>
+    </section>
+    <!-- *************CONTENT************  -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.76131827848!2d3.405377868205831!3d6.429984102260736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf52dc0328169%3A0x7885a1a33689a576!2sVictoria%20Island%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1634918896978!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Road 18, Victoria Island</h5>
+                        <p>Lagos, NIGERIA</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+234 913 795 0366</h5>
+                        <p>Monday to Saturday, 10AM TO 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>ideacloudng@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- *************FOOTER************  -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3><img src="assets/images/logo.png" class="footer__logo"></h3>
+                <p>Nigeria's Largest Online University</p>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="course.html">Our Courses</a>
+                <a href="blog.html">Our Blog</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe For Latest Updates</p>
+                <form name="newsletter" method="POST" data-netlify="true">
+                    <input type="email" name="mail" placeholder="Enter your email">
+                    <button type="submit" class="fa fa-paper-plane"></button>
+                </form>
+            </div>
+
+        </div>
+
+        <h1 class="credit"><a>&copy;2021.</a> Site Design by <a>GSE Group 15</a></h1>
+
+    </section>
+    <script>
+        /*MENU TOGGLE*/
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
